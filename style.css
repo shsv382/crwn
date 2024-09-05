@@ -12,6 +12,38 @@ header {
     width: 100%;
     background-color: white;
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+    z-index: 9990;
+}
+
+header .logo-container {
+    height: 100%;
+    width: 70px;
+    padding: 25px;
+    background-color: black;
+    background: linear-gradient(90deg,rgb(242, 104, 30), rgb(18, 175, 175));
+    mask: url('/assets/crown.svg');
+    mask-repeat: no-repeat;
+    mask-position: center center;
+}
+  
+header .options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .option {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    cursor: pointer;
 }
 
 main {
@@ -41,6 +73,8 @@ main {
     transition: all 6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     display: grid;
     place-items: center;
+    color: black;
+    text-decoration: none;
 }
 
 .menu-item:hover {
